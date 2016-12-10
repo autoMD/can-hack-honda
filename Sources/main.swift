@@ -1,1 +1,7 @@
-print("Hello, world!")
+import Commander
+
+let main = command {
+    print("Hello World")
+}
+
+main.run()

@@ -14,7 +14,35 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_13"
+               BlueprintIdentifier = "OBJ_34"
+               BuildableName = "Spectre.framework"
+               BlueprintName = "Spectre"
+               ReferencedContainer = "container:can-hack-honda.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_48"
+               BuildableName = "Commander.framework"
+               BlueprintName = "Commander"
+               ReferencedContainer = "container:can-hack-honda.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_65"
                BuildableName = "can-hack-honda"
                BlueprintName = "can-hack-honda"
                ReferencedContainer = "container:can-hack-honda.xcodeproj">
@@ -45,9 +73,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_13"
-            BuildableName = "can-hack-honda"
-            BlueprintName = "can-hack-honda"
+            BlueprintIdentifier = "OBJ_34"
+            BuildableName = "Spectre.framework"
+            BlueprintName = "Spectre"
             ReferencedContainer = "container:can-hack-honda.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
