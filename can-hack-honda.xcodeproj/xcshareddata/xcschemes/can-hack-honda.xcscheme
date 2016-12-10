@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_34"
+               BlueprintIdentifier = "OBJ_37"
                BuildableName = "Spectre.framework"
                BlueprintName = "Spectre"
                ReferencedContainer = "container:can-hack-honda.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_48"
+               BlueprintIdentifier = "OBJ_51"
                BuildableName = "Commander.framework"
                BlueprintName = "Commander"
                ReferencedContainer = "container:can-hack-honda.xcodeproj">
@@ -42,7 +42,21 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_65"
+               BlueprintIdentifier = "OBJ_68"
+               BuildableName = "PathKit.framework"
+               BlueprintName = "PathKit"
+               ReferencedContainer = "container:can-hack-honda.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_75"
                BuildableName = "can-hack-honda"
                BlueprintName = "can-hack-honda"
                ReferencedContainer = "container:can-hack-honda.xcodeproj">
@@ -73,7 +87,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_34"
+            BlueprintIdentifier = "OBJ_37"
             BuildableName = "Spectre.framework"
             BlueprintName = "Spectre"
             ReferencedContainer = "container:can-hack-honda.xcodeproj">
