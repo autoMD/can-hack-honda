@@ -1,18 +1,15 @@
-# Software Design Document
-Software Design Document for the can-hack family of programs
-
 # Module Structure
-
-## CLI
-
-#### main.swift
-MAIN?
+Module Structure for the can-hack family of programs
 
 ## CAN
-#### CANData.swift
+#### Data.swift
 Contains basic data structures for representing can data
 - struct CanID = (UInt8, UInt8, UInt8, UInt8)
 - struct CanData = [UInt8]
+
+#### Parse.swift
+Tools for parsing input strings into Can Data Structures
+
 
 #### MessageType.swift
 Tools for identifying a message as a specific type
@@ -22,10 +19,20 @@ Tools for identifying a message as a specific type
 Tools for identifying a message source or target
 subclass MessageType
 
-#### Parse.swift
-Tools for parsing input strings into Can Data Structures
+#### DataSet.swift
+A Object that represents a set of can data frames
 
-## HondaCan
+METHODS: 
+- stats(id|[ids])
+Stats of specific ids
+- Frequency/ frequency of data frames
+
+## Hack
+
+#### main.swift
+MAIN?
+
+## Honda
 #### Messages.swift
 Known Honda Can Message Types
 
