@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1907D2391DFD1AE5008FC833 /* parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C242551DFD126C007B5264 /* parsing.swift */; };
 		195924861DFCD8620030777A /* CAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195924851DFCD8620030777A /* CAN.swift */; };
-		19C242561DFD126C007B5264 /* parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C242551DFD126C007B5264 /* parsing.swift */; };
 		OBJ_42 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Case.swift */; };
 		OBJ_43 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Context.swift */; };
 		OBJ_44 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Expectation.swift */; };
@@ -278,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_76 /* Build configuration list for PBXNativeTarget "can-hack-honda" */;
 			buildPhases = (
+				1907D2381DFD1AB2008FC833 /* ShellScript */,
 				OBJ_79 /* Sources */,
 				OBJ_81 /* Frameworks */,
 			);
@@ -321,6 +322,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1907D2381DFD1AB2008FC833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,7 +346,6 @@
 				OBJ_42 /* Case.swift in Sources */,
 				OBJ_43 /* Context.swift in Sources */,
 				OBJ_44 /* Expectation.swift in Sources */,
-				19C242561DFD126C007B5264 /* parsing.swift in Sources */,
 				OBJ_45 /* Failure.swift in Sources */,
 				OBJ_46 /* Global.swift in Sources */,
 				OBJ_47 /* GlobalContext.swift in Sources */,
@@ -366,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				1907D2391DFD1AE5008FC833 /* parsing.swift in Sources */,
 				195924861DFCD8620030777A /* CAN.swift in Sources */,
 				OBJ_80 /* main.swift in Sources */,
 			);

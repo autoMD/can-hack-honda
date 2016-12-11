@@ -45,16 +45,18 @@ extension HondaCanID {
 }
 
 extension HondaCanFrame {
-    init(parse string: String) throws {
-        id = try HondaCanID(parse: string)
+    convenience init(parse string: String) throws {
+        let id = try HondaCanID(parse: string)
 
         guard let dataRange = string.range(of: "(,[A-F0-9]{2})+$", options: .regularExpression) else {
-            data = []
+            self.init(id: id, data: [])
             return
         }
 
         let dataString = string.substring(with: dataRange)
 
-        data = try dataString.components(separatedBy: ",").filter {!$0.isEmpty}.map(parse(hex:))
+        let data = try dataString.components(separatedBy: ",").filter {!$0.isEmpty}.map(parse(hex:))
+        
+        self.init(id: id, data: data)
     }
 }

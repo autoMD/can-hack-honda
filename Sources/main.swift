@@ -5,22 +5,16 @@ import PathKit
 func parse(linesIn file: Path, filter id: HondaCanID?) {
     do {
         try file.read().enumerateLines { (line, bool) in
-            do {
-                let frame = try HondaCanFrame(parse: line)
+            guard let frame = try? HondaCanFrame(parse: line) else {
+                return
+            }
 
-                if let id = id {
-                    if id == frame.id {
-                        print(frame)
-                    }
-                } else {
+            if let id = id {
+                if id == frame.id {
                     print(frame)
                 }
-            } catch ParseError.idNotFound {
-                print("Couldn't find a CAN id in: \(line)")
-            } catch ParseError.invalidHex(let hex) {
-                print("Invalid hex: \(hex)")
-            } catch {
-
+            } else {
+                print(frame)
             }
         }
     } catch {

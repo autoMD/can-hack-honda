@@ -41,12 +41,14 @@ extension HondaCanID : Equatable {
 
 // MARK: CAN Frame
 
-class HondaCanFrame : CustomStringConvertible {
-// swiftlint:disable variable_name
+class HondaCanFrame {
     var id: HondaCanID
     var data: [UInt8]
 
-    init(id: HondaCanID, data: [UInt8])
+    init(id: HondaCanID, data: [UInt8]) {
+        self.id = id
+        self.data = data
+    }
 }
 
 extension HondaCanFrame : CustomStringConvertible {
