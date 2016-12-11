@@ -4,12 +4,15 @@ import PathKit
 func parse(linesIn file: Path) {
     do {
         try file.read().enumerateLines { (line, bool) in
-            let frame = try? HondaCanFrame(parse: line)
-            
-            if let frame = frame {
+            do {
+                let frame = try HondaCanFrame(parse: line)
                 print(frame)
-            } else {
-                print("Couldn't parse frame from line: \(line)")
+            } catch ParseError.idNotFound {
+                print("Couldn't find a CAN id in: \(line)")
+            } catch ParseError.invalidHex(let hex) {
+                print("Invalid hex: \(hex)")
+            } catch {
+                
             }
         }
     } catch {
@@ -17,17 +20,18 @@ func parse(linesIn file: Path) {
     }
 }
 
-let main = command { (files: String) in
-    let path = Path(files)
-    
-    if path.isDirectory {
-        print("\(path) is a directory")
-        print("Iterating over all files")
+let main = command(VariadicArgument("files", description: "Files to process")) { (files: [String]) in
+    for file in files {
+        let path = Path(file)
         
-        for file in path.glob("*") {
-            parse(linesIn: file)
+        guard path.isFile else {
+            if (path.isDirectory) {
+                print("Error: \(path) is a directory, not a file")
+            } else {
+                print("Error: \(path) is not a file")
+            }
+            break
         }
-    } else if path.isFile {
         parse(linesIn: path)
     }
 }
