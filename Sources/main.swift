@@ -1,12 +1,19 @@
 import Commander
 import PathKit
 
-func parse(linesIn file: Path) {
+func parse(linesIn file: Path, filter id: HondaCanID?) {
     do {
         try file.read().enumerateLines { (line, bool) in
             do {
                 let frame = try HondaCanFrame(parse: line)
-                print(frame)
+                
+                if let id = id {
+                    if id == frame.id {
+                        print(frame)
+                    }
+                } else {
+                    print(frame)
+                }
             } catch ParseError.idNotFound {
                 print("Couldn't find a CAN id in: \(line)")
             } catch ParseError.invalidHex(let hex) {
@@ -20,7 +27,21 @@ func parse(linesIn file: Path) {
     }
 }
 
-let main = command(VariadicArgument("files", description: "Files to process")) { (files: [String]) in
+command(
+    Option("id", "", description: "Id to search for"),
+    VariadicArgument("files", description: "Files to process")
+) { (id: String, files: [String]) in
+    // Parse filter strings into HondaCanID so they can be compared later
+    var searchId: HondaCanID? = nil
+    
+    if !id.isEmpty {
+        if let search = try? HondaCanID(parse: id) {
+            searchId = search
+        } else {
+            print("Error: couldn't parse filter id: \(id)")
+        }
+    }
+    
     for file in files {
         let path = Path(file)
         
@@ -32,8 +53,7 @@ let main = command(VariadicArgument("files", description: "Files to process")) {
             }
             break
         }
-        parse(linesIn: path)
+        
+        parse(linesIn: path, filter: searchId)
     }
-}
-
-main.run()
+}.run()

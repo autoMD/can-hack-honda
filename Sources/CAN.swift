@@ -27,7 +27,7 @@ enum ParseError: Error {
     case invalidHex(String)
 }
 
-class HondaCanID : CustomStringConvertible {
+class HondaCanID : CustomStringConvertible, Equatable {
     var id: (UInt8, UInt8, UInt8, UInt8)
     
     init(parse string: String) throws {
@@ -52,6 +52,10 @@ class HondaCanID : CustomStringConvertible {
     
     var description: String {
         return "0x\(id.0.hex)\(id.1.hex)\(id.2.hex)\(id.3.hex)"
+    }
+    
+    static func == (left: HondaCanID, right: HondaCanID) -> Bool {
+        return left.id == right.id
     }
 }
 
