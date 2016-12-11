@@ -1,12 +1,13 @@
 import Commander
 import PathKit
 
+// swiftlint:disable:next variable_name
 func parse(linesIn file: Path, filter id: HondaCanID?) {
     do {
         try file.read().enumerateLines { (line, bool) in
             do {
                 let frame = try HondaCanFrame(parse: line)
-                
+
                 if let id = id {
                     if id == frame.id {
                         print(frame)
@@ -19,7 +20,7 @@ func parse(linesIn file: Path, filter id: HondaCanID?) {
             } catch ParseError.invalidHex(let hex) {
                 print("Invalid hex: \(hex)")
             } catch {
-                
+
             }
         }
     } catch {
@@ -33,7 +34,7 @@ command(
 ) { (id: String, files: [String]) in
     // Parse filter strings into HondaCanID so they can be compared later
     var searchId: HondaCanID? = nil
-    
+
     if !id.isEmpty {
         if let search = try? HondaCanID(parse: id) {
             searchId = search
@@ -41,19 +42,19 @@ command(
             print("Error: couldn't parse filter id: \(id)")
         }
     }
-    
+
     for file in files {
         let path = Path(file)
-        
+
         guard path.isFile else {
-            if (path.isDirectory) {
+            if path.isDirectory {
                 print("Error: \(path) is a directory, not a file")
             } else {
                 print("Error: \(path) is not a file")
             }
             break
         }
-        
+
         parse(linesIn: path, filter: searchId)
     }
 }.run()
