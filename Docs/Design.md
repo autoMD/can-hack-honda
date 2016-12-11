@@ -3,7 +3,7 @@ Software Design Document for the can-hack family of programs
 
 # Module Structure
 
-### CAN
+## CAN
 #### CAN.swift
 Contains basic data structures for representing can data
 - typealias CanID = (UInt8, UInt8, UInt8, UInt8)
@@ -20,7 +20,7 @@ subclass MessageType
 #### Parse.swift
 Tools for parsing input strings into Can Data Structures
 
-### HondaCan
+## HondaCan
 #### Messages.swift
 Honda Can Message Types
 
