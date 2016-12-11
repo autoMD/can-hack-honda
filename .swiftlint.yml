@@ -1,0 +1,11 @@
+disabled_rules: # rule identifiers to exclude from running
+ - colon
+
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - missing_docs
+
+force_cast: warning
+force_try: warning
+
+line_length: 110

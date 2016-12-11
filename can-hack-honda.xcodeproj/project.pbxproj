@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		195924861DFCD8620030777A /* CAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195924851DFCD8620030777A /* CAN.swift */; };
+		19C242561DFD126C007B5264 /* parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C242551DFD126C007B5264 /* parsing.swift */; };
 		OBJ_42 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Case.swift */; };
 		OBJ_43 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Context.swift */; };
 		OBJ_44 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Expectation.swift */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		195924851DFCD8620030777A /* CAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAN.swift; sourceTree = "<group>"; };
+		19C242551DFD126C007B5264 /* parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parsing.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				OBJ_30 /* main.swift */,
 				195924851DFCD8620030777A /* CAN.swift */,
+				19C242551DFD126C007B5264 /* parsing.swift */,
 			);
 			name = "can-hack-honda";
 			path = Sources;
@@ -182,7 +185,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -190,7 +193,6 @@
 				OBJ_31 /* Tests */,
 				OBJ_32 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -306,7 +308,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -327,6 +329,7 @@
 				OBJ_42 /* Case.swift in Sources */,
 				OBJ_43 /* Context.swift in Sources */,
 				OBJ_44 /* Expectation.swift in Sources */,
+				19C242561DFD126C007B5264 /* parsing.swift in Sources */,
 				OBJ_45 /* Failure.swift in Sources */,
 				OBJ_46 /* Global.swift in Sources */,
 				OBJ_47 /* GlobalContext.swift in Sources */,
