@@ -62,7 +62,7 @@ extension CanFrame: Equatable {
 
 extension CanFrame : CustomStringConvertible {
     var description: String {
-        return "\(id): " + data.map {$0.hex}.joined(separator: ", ")
+        return "\(id): " + data.map {"0x\($0.hex)"}.joined(separator: ", ")
     }
 }
 
