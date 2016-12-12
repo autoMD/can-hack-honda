@@ -1,6 +1,6 @@
 //
 //  parsing.swift
-//  can-hack-honda
+//  can-hack-
 //
 //  Created by Jackson Smith on 12/10/16.
 //
@@ -20,8 +20,8 @@ func parse(hex: String) throws -> UInt8 {
     return int
 }
 
-extension HondaCanID {
-    convenience init(parse string: String) throws {
+extension CanID {
+    init(parse string: String) throws {
         guard let idRange = string.range(of: "0x([A-F0-9]{7,8})", options: .regularExpression) else {
             throw ParseError.idNotFound
         }
@@ -40,13 +40,13 @@ extension HondaCanID {
             try parse(hex: idString.substring(from: index4))
         )
 
-        self.init(data)
+        self.init(data: data)
     }
 }
 
-extension HondaCanFrame {
-    convenience init(parse string: String) throws {
-        let id = try HondaCanID(parse: string)
+extension CanFrame {
+    init(parse string: String) throws {
+        let id = try CanID(parse: string)
 
         guard let dataRange = string.range(of: "(,[A-F0-9]{2})+$", options: .regularExpression) else {
             self.init(id: id, data: [])
