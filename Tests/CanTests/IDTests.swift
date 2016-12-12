@@ -9,7 +9,7 @@
 import XCTest
 @testable import Can
 
-class CanIDTests: XCTestCase {
+class IDTests: XCTestCase {
     let testIDs: [CanID.Data] = [
         (0xA, 0xF8, 0x11, 0x11),
         (0x12, 0x16, 0x12, 0x10),

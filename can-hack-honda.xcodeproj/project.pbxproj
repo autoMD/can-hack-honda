@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550B437E1DFF2A1000CDE972 /* FrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B437D1DFF2A1000CDE972 /* FrameTests.swift */; };
 		OBJ_100 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PathKit.framework */; };
 		OBJ_109 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* main.swift */; };
 		OBJ_111 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Spectre.framework */; };
@@ -16,8 +17,7 @@
 		OBJ_124 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Spectre.framework */; };
 		OBJ_125 /* Commander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Commander.framework */; };
 		OBJ_126 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PathKit.framework */; };
-		OBJ_135 /* TestCanFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* TestCanFrame.swift */; };
-		OBJ_136 /* TestCanID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* TestCanID.swift */; };
+		OBJ_136 /* IDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* IDTests.swift */; };
 		OBJ_138 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Spectre.framework */; };
 		OBJ_139 /* Commander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Commander.framework */; };
 		OBJ_140 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PathKit.framework */; };
@@ -49,98 +49,98 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		550B43611DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B436F1DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_51;
 			remoteInfo = Spectre;
 		};
-		550B43621DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43701DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_51;
 			remoteInfo = Spectre;
 		};
-		550B43631DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43711DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Commander;
 		};
-		550B43641DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43721DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_82;
 			remoteInfo = PathKit;
 		};
-		550B43651DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43731DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_51;
 			remoteInfo = Spectre;
 		};
-		550B43661DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43741DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Commander;
 		};
-		550B43671DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43751DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_82;
 			remoteInfo = PathKit;
 		};
-		550B43681DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43761DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_51;
 			remoteInfo = Spectre;
 		};
-		550B43691DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43771DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Commander;
 		};
-		550B436A1DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43781DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_82;
 			remoteInfo = PathKit;
 		};
-		550B436B1DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B43791DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_51;
 			remoteInfo = Spectre;
 		};
-		550B436C1DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B437A1DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Commander;
 		};
-		550B436D1DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B437B1DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_82;
 			remoteInfo = PathKit;
 		};
-		550B436E1DFF1CFC00CDE972 /* PBXContainerItemProxy */ = {
+		550B437C1DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -150,6 +150,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550B437D1DFF2A1000CDE972 /* FrameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
@@ -172,8 +173,7 @@
 		OBJ_32 /* Parse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
 		OBJ_34 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_36 /* Honda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honda.swift; sourceTree = "<group>"; };
-		OBJ_39 /* TestCanFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCanFrame.swift; sourceTree = "<group>"; };
-		OBJ_40 /* TestCanID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCanID.swift; sourceTree = "<group>"; };
+		OBJ_40 /* IDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDTests.swift; sourceTree = "<group>"; };
 		OBJ_41 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = SOURCE_ROOT; };
 		OBJ_42 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
 		OBJ_44 /* Spectre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Spectre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,8 +320,8 @@
 		OBJ_38 /* CanTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_39 /* TestCanFrame.swift */,
-				OBJ_40 /* TestCanID.swift */,
+				550B437D1DFF2A1000CDE972 /* FrameTests.swift */,
+				OBJ_40 /* IDTests.swift */,
 			);
 			name = CanTests;
 			path = Tests/CanTests;
@@ -564,8 +564,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_135 /* TestCanFrame.swift in Sources */,
-				OBJ_136 /* TestCanID.swift in Sources */,
+				550B437E1DFF2A1000CDE972 /* FrameTests.swift in Sources */,
+				OBJ_136 /* IDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,72 +624,72 @@
 		OBJ_101 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_51 /* Spectre */;
-			targetProxy = 550B43621DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43701DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_102 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_65 /* Commander */;
-			targetProxy = 550B43631DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43711DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_103 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_82 /* PathKit */;
-			targetProxy = 550B43641DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43721DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_114 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_51 /* Spectre */;
-			targetProxy = 550B43651DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43731DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_115 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_65 /* Commander */;
-			targetProxy = 550B43661DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43741DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_116 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_82 /* PathKit */;
-			targetProxy = 550B43671DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43751DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_127 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_51 /* Spectre */;
-			targetProxy = 550B43681DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43761DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_128 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_65 /* Commander */;
-			targetProxy = 550B43691DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43771DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_129 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_82 /* PathKit */;
-			targetProxy = 550B436A1DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43781DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_142 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_51 /* Spectre */;
-			targetProxy = 550B436B1DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B43791DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_143 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_65 /* Commander */;
-			targetProxy = 550B436C1DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B437A1DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_144 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_82 /* PathKit */;
-			targetProxy = 550B436D1DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B437B1DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_145 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_89 /* Can */;
-			targetProxy = 550B436E1DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B437C1DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 		OBJ_81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_51 /* Spectre */;
-			targetProxy = 550B43611DFF1CFC00CDE972 /* PBXContainerItemProxy */;
+			targetProxy = 550B436F1DFF283E00CDE972 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
