@@ -36,28 +36,33 @@ class ParseTests: XCTestCase {
     ]
     
     let testDataStrings = [
-        "0xA, 0xF8, 0x11, 0x11",
-        "0x12, 0x16, 0x12, 0x10",
-        "0xA, 0x12, 0x32, 0x30",
-        "0xA, 0xF8, 0x50, 0x50",
-        "0x14, 0x22, 0x67, 0x50, 0x14, 0x22, 0x67, 0x50"
+        "0A, F8, 11, 11",
+        "12, 16, 12, 10",
+        "0A, 12, 32, 30",
+        "0A, F8, 50, 50",
+        "14, 22, 67, 50, 14, 22, 67, 50"
     ]
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+//    override func setUp() {
+//        super.setUp()
+//        // Put setup code here. This method is called before the invocation of each test method in the class.
+//    }
+//    
+//    override func tearDown() {
+//        // Put teardown code here. This method is called after the invocation of each test method in the class.
+//        super.tearDown()
+//    }
 
     func testParseCanFrame() {
-        for ((id, data), (idString, dataString)) in zip(zip(testIDs, testData), zip(testIDStrings, testDataStrings)) {
+        for (id, data) in zip(testIDs, testData) {
+        
             let canFrame = CanFrame(id: CanID(data: id), data: data)
-            
-            XCTAssertTrue(canFrame.description == "\(idString): " + dataString, "Can Frame description does not match")
+
+            if let parsedCanFrame = try? CanFrame(parse: "\(canFrame)") {
+                XCTAssertTrue(parsedCanFrame == canFrame, "\(canFrame) does not match \(parsedCanFrame)")
+            } else {
+                XCTFail("Could not parse can frame \(canFrame)")
+            }
             
         }
     }

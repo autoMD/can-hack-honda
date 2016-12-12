@@ -48,14 +48,17 @@ extension CanFrame {
     init(parse string: String) throws {
         let id = try CanID(parse: string)
 
-        guard let dataRange = string.range(of: "(,[A-F0-9]{2})+$", options: .regularExpression) else {
+        guard let dataRange = string.range(of: "([A-F0-9]{2})(, ?[A-F0-9]{2})*$", options: .regularExpression) else {
             self.init(id: id, data: [])
             return
         }
 
         let dataString = string.substring(with: dataRange)
 
-        let data = try dataString.components(separatedBy: ",").filter {!$0.isEmpty}.map(parse(hex:))
+        // Break up comma separated list, trim whitespace, and parse to number
+        let data = try dataString.components(separatedBy: ",").map {hexString in
+            try parse(hex: hexString.trimmingCharacters(in: .whitespaces))
+        }
         
         self.init(id: id, data: data)
     }

@@ -36,10 +36,10 @@ class FrameTests: XCTestCase {
         ]
         
         let testDataStrings = [
-            "A, F8, 11, 11",
+            "0A, F8, 11, 11",
             "12, 16, 12, 10",
-            "A, 12, 32, 30",
-            "A, F8, 50, 50",
+            "0A, 12, 32, 30",
+            "0A, F8, 50, 50",
             "14, 22, 67, 50, 14, 22, 67, 50"
         ]
         
@@ -58,7 +58,7 @@ class FrameTests: XCTestCase {
             }
         }
         
-        func testCanFrameDescription () {
+        func testCanFrameDescription() {
             for ((id, data), (idString, dataString)) in zip(zip(testIDs, testData), zip(testIDStrings, testDataStrings)) {
                 let canFrame = CanFrame(id: CanID(data: id), data: data)
                 
