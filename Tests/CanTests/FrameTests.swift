@@ -36,11 +36,11 @@ class FrameTests: XCTestCase {
         ]
         
         let testDataStrings = [
-            "0xA, 0xF8, 0x11, 0x11",
-            "0x12, 0x16, 0x12, 0x10",
-            "0xA, 0x12, 0x32, 0x30",
-            "0xA, 0xF8, 0x50, 0x50",
-            "0x14, 0x22, 0x67, 0x50, 0x14, 0x22, 0x67, 0x50"
+            "A, F8, 11, 11",
+            "12, 16, 12, 10",
+            "A, 12, 32, 30",
+            "A, F8, 50, 50",
+            "14, 22, 67, 50, 14, 22, 67, 50"
         ]
         
         func testCanFrameRecalsData() {
