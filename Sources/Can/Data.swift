@@ -8,8 +8,15 @@
 import Foundation
 
 extension UInt8 {
+    /// Converts to a hex string
     var hex: String {
         return String(self, radix: 16, uppercase: true)
+    }
+    
+    /// like hex, but with padding to two characters
+    /// should be used to format data bytes
+    var hexByte: String {
+        return String(format: "%02X", self)
     }
 }
 
@@ -62,7 +69,7 @@ extension CanFrame: Equatable {
 
 extension CanFrame : CustomStringConvertible {
     var description: String {
-        return "\(id): " + data.map {$0.hex}.joined(separator: ", ")
+        return "\(id): " + data.map {$0.hexByte}.joined(separator: ", ")
     }
 }
 
