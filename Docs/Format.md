@@ -13,9 +13,11 @@ There's no true reason for this. It just bothers me enough to make it worth brea
 
 ## Frames
 Frames should be formatted like this, with all data in hex:
-`0xAF81111: A, 40`
+`0xAF81111: 0A, 40`
 
 Id's have a prefix of `0x`, while data does not (it looks strange when repeated many times)
 This also gives them better visual distinction
+
+Data is hex and must be padded with a leading 0 if the hex is less than 17
 
 Lengths can be specified optionally in parenthesis: `0xAF81111(2): A, 40` TODO: this is not implemented yet ([see issue](https://github.com/apple/swift-package-manager/blob/master/Documentation/Reference.md))
