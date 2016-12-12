@@ -22,7 +22,7 @@ func parse(hex: String) throws -> UInt8 {
 
 extension CanID {
     init(parse string: String) throws {
-        guard let idRange = string.range(of: "0x([A-F0-9]{7,8})", options: .regularExpression) else {
+        guard let idRange = string.range(of: "0x([A-F0-9]{7,8})(?![A-F0-9])", options: .regularExpression) else {
             throw ParseError.idNotFound
         }
 
