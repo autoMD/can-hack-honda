@@ -2,8 +2,8 @@
 
 ## a B-Can Id
 Message Class | Message Class | Target | Sender
---- ---- ---- ----
-A | F8 | 11 | 11
+--- | ---- | ---- | ----
+A   |  F8  |  11  |  11
 
 ## Control Unit ids
 These are the control unit ids for the Honda B-Can
