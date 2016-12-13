@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias IDMatch = (UInt8?,UInt8?,UInt8?,UInt8?)
+typealias IDMatch = [UInt8?]
 
 class MessageType {
     var match: IDMatch
@@ -17,13 +17,22 @@ class MessageType {
         self.match = match
     }
     
-    func isMatch(_ data: CanID.Data) -> Bool {
-        return false
+    func matches(_ data: CanData) -> Bool {
+        for (matchSegment, dataSegment) in zip(match, data) {
+            guard let activatedMatchSegment = matchSegment else {
+                continue // we don't care about this part of the data
+            }
+
+            if activatedMatchSegment != dataSegment {
+                return false // can't be a match
+            }
+        }
+        return true
     }
 }
 
 extension CanID {
     func `is`(type: MessageType) -> Bool {
-        return false
+        return type.matches(self.data)
     }
 }

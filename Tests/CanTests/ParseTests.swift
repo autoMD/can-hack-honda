@@ -11,13 +11,13 @@ import XCTest
 
 class ParseTests: XCTestCase {
 
-    let testIds: [CanID.Data] = [
-        (0xA, 0xF8, 0x11, 0x11),
-        (0x12, 0x16, 0x12, 0x10),
-        (0xA, 0x12, 0x32, 0x30),
-        (0xA, 0xF8, 0x50, 0x50),
-        (0x14, 0x22, 0x67, 0x50),
-        (0xA, 0xF8, 0x11, 0x11)
+    let testIds: [CanData] = [
+        [0xA, 0xF8, 0x11, 0x11],
+        [0x12, 0x16, 0x12, 0x10],
+        [0xA, 0x12, 0x32, 0x30],
+        [0xA, 0xF8, 0x50, 0x50],
+        [0x14, 0x22, 0x67, 0x50],
+        [0xA, 0xF8, 0x11, 0x11]
     ]
     
     let testData: [CanData] = [
@@ -78,7 +78,7 @@ class ParseTests: XCTestCase {
     func testParseCanFrame() {
         for (id, data) in zip(testIds, testData) {
         
-            let canFrame = CanFrame(id: CanID(data: id), data: data)
+            let canFrame = CanFrame(id: CanID(id), data: data)
 
             if let parsedCanFrame = try? CanFrame(parse: "\(canFrame)") {
                 XCTAssertTrue(parsedCanFrame == canFrame, "\(canFrame) does not match \(parsedCanFrame)")

@@ -27,20 +27,20 @@ extension CanID {
         }
 
         let idString = string.substring(with: idRange)
-
+        
         let index4 = idString.index(idString.endIndex, offsetBy: -2)
         let index3 = idString.index(idString.endIndex, offsetBy: -4)
         let index2 = idString.index(idString.endIndex, offsetBy: -6)
         let index1  = idString.index(idString.startIndex, offsetBy: 2)
 
-        let data = (
+        let data = [
             try parse(hex: idString.substring(with: index1..<index2)),
             try parse(hex: idString.substring(with: index2..<index3)),
             try parse(hex: idString.substring(with: index3..<index4)),
             try parse(hex: idString.substring(from: index4))
-        )
+        ]
 
-        self.init(data: data)
+        self.init(data)
     }
 }
 
