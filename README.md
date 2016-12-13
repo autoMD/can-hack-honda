@@ -1,6 +1,9 @@
 # can-hack-honda
  Intermediate data and results of hacking/reverse engineering the internal controller area network protocol of a 2006 Honda Ridgeline.
 
+# Honda CAN messages
+Reference to known Honda CAN messages can be found [here](./Docs/HondaCan.md)
+
 # DATA
 All data used with this tool is stored in the [Data directory](./Data)
 
