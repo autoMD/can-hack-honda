@@ -19,7 +19,7 @@ Gauge Control Module            | 50
 Climate Control Unit            | 52
 Combination Switch Control Unit | 70
 
-## Message Types
+## Message Types and Recivers
 These are the types of messages sent and the recivers. They correspond to the first 2? Bytes of the Message Id
 
 Transmitting Control Unit | Message | MICU | Relay Control Module | Door Multiplex Control Unit | Combination Switch Control Unit | Gauge Control Module | Climate Control Unit
@@ -35,3 +35,8 @@ Gauge Control Module (50)            | VSP/NE                    | [x] | [x] |  
                                      | ENGTEP                    |     |     |     |     |     | [x] |
 Combination Switch Control Unit (70) | Headlight Switch          | [x] | [x] |     |     | [x] |     |
                                      | Wiper Switch              |     | [x] |     |     | [x] |     |
+
+## Message Id Prefixes (Priorites)
+Message | 
+---- | ----
+0xAF8 | 
