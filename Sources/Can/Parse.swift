@@ -66,7 +66,7 @@ public extension CanFrame {
 
 public extension DataSet {
     convenience init(parse string: String) {
-        var data: [CanFrame] = []
+        var data: Set<CanFrame> = []
         
         string.enumerateLines { (line, stop) in
             guard let frame = try? CanFrame(parse: line) else {
@@ -74,7 +74,7 @@ public extension DataSet {
                 return // this line is bad, go to next one
             }
             
-            data.append(frame)
+            data.insert(frame)
         }
         
         self.init(frames: data)
