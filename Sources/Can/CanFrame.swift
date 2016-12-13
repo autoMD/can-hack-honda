@@ -31,6 +31,17 @@ extension CanFrame: Equatable {
     }
 }
 
+extension CanFrame: Hashable {
+    public var hashValue: Int {
+        let combinedData = id.data + data
+        
+        // DJB hash function
+        return combinedData.reduce(5381) {
+            ($0 << 5) &+ $0 &+ Int($1)
+        }
+    }
+}
+
 extension CanFrame : CustomStringConvertible {
     public var description: String {
         return "\(id): " + data.map {$0.hexByte}.joined(separator: ", ")
