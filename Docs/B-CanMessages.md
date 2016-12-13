@@ -24,18 +24,18 @@ These are the types of messages sent. They correspond to the first 2? Bytes of t
 
 Transmitting Control Unit | Message | MICU | Relay Control Module | Door Multiplex Control Unit | Combination Switch Control Unit | Gauge Control Module | Climate Control Unit
 --- | --- | --- | --- | --- | --- | --- | --- 
-MICU                            | Alarm |
-                                | MICU  |
-                                | Door Switch |
-Relay Control Module            | Relay Control Module |
-Door Multiplex Control Unit     | Panic |
-                                | Driver's Door Lock Switch |
-Combination Switch Control Unit | Headlight Switch |
-                                | Wiper Switch |
-Gauge Control Module            | VSP/NE |
-                                | A/T |
-                                | ENGTEP |
-PCM                             | ENG |
-                                | AT |
-TPMS                            | TPMS |
-VSA                             | VSA |
+MICU                            | Alarm                     |     | [x] |     |     |     |     |
+                                | MICU                      |     | [x] | [x] | [x] | [x] |     |
+                                | Door Switch               |     | [x] | [x] |     | [x] |     |
+Relay Control Module            | Relay Control Module      | [x] |     |     |     | [x] |     |
+Door Multiplex Control Unit     | Panic                     | [x] | [x] |     |     |     |     |
+                                | Driver's Door Lock Switch | [x] | [x] |     |     | [x] |     |
+Combination Switch Control Unit | Headlight Switch          | [x] | [x] |     |     | [x] |     |
+                                | Wiper Switch              |     | [x] |     |     | [x] |     |
+Gauge Control Module            | VSP/NE                    | [x] | [x] |     |     |     | [x] |
+                                | A/T                       | [x] | [x] |     |     |     |     |
+                                | ENGTEP                    |     |     |     |     |     | [x] |
+PCM                             | ENG                       |     |     |     |     | [x] |     |
+                                | AT                        |     |     |     |     | [x] |     |
+TPMS                            | TPMS                      |     |     |     |     | [x] |     |
+VSA                             | VSA                       |     |     |     |     | [x] |     |
