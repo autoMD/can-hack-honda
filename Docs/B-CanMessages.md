@@ -1,6 +1,7 @@
 # B-CanMessage Anatomy
 
-Ex: `0xAF81111`
+Ex: `0xAF81111`  
+
 Message Class | Message Class | Target | Sender
 --- | ---- | ---- | ----
 A   |  F8  |  11  |  11
