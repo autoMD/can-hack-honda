@@ -24,18 +24,14 @@ These are the types of messages sent. They correspond to the first 2? Bytes of t
 
 Transmitting Control Unit | Message | MICU | Relay Control Module | Door Multiplex Control Unit | Combination Switch Control Unit | Gauge Control Module | Climate Control Unit
 --- | --- | --- | --- | --- | --- | --- | --- 
-MICU                            | Alarm                     |     | [x] |     |     |     |     |
-                                | MICU                      |     | [x] | [x] | [x] | [x] |     |
-                                | Door Switch               |     | [x] | [x] |     | [x] |     |
-Relay Control Module            | Relay Control Module      | [x] |     |     |     | [x] |     |
-Door Multiplex Control Unit     | Panic                     | [x] | [x] |     |     |     |     |
-                                | Driver's Door Lock Switch | [x] | [x] |     |     | [x] |     |
-Combination Switch Control Unit | Headlight Switch          | [x] | [x] |     |     | [x] |     |
-                                | Wiper Switch              |     | [x] |     |     | [x] |     |
-Gauge Control Module            | VSP/NE                    | [x] | [x] |     |     |     | [x] |
-                                | A/T                       | [x] | [x] |     |     |     |     |
-                                | ENGTEP                    |     |     |     |     |     | [x] |
-PCM                             | ENG                       |     |     |     |     | [x] |     |
-                                | AT                        |     |     |     |     | [x] |     |
-TPMS                            | TPMS                      |     |     |     |     | [x] |     |
-VSA                             | VSA                       |     |     |     |     | [x] |     |
+MICU (10)                            | Alarm                     |     | [x] |     |     |     |     |
+                                     | MICU                      |     | [x] | [x] | [x] | [x] |     |
+                                     | Door Switch               |     | [x] | [x] |     | [x] |     |
+Relay Control Module (11)            | Relay Control Module      | [x] |     |     |     | [x] |     |
+Door Multiplex Control Unit (30)     | Panic                     | [x] | [x] |     |     |     |     |
+                                     | Driver's Door Lock Switch | [x] | [x] |     |     | [x] |     |
+Gauge Control Module (50)            | VSP/NE                    | [x] | [x] |     |     |     | [x] |
+                                     | A/T                       | [x] | [x] |     |     |     |     |
+                                     | ENGTEP                    |     |     |     |     |     | [x] |
+Combination Switch Control Unit (70) | Headlight Switch          | [x] | [x] |     |     | [x] |     |
+                                     | Wiper Switch              |     | [x] |     |     | [x] |     |
