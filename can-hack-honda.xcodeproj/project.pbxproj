@@ -12,6 +12,8 @@
 		550B43871DFF85C600CDE972 /* CanID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43831DFF849100CDE972 /* CanID.swift */; };
 		550B43881DFF85CB00CDE972 /* CanFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43851DFF84C200CDE972 /* CanFrame.swift */; };
 		550B438A1DFF9AC300CDE972 /* MessageTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43891DFF9AC300CDE972 /* MessageTypeTests.swift */; };
+		55BAC7E11E009247002CE96B /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAC7DF1E009199002CE96B /* DataSet.swift */; };
+		55BAC7E31E0097D5002CE96B /* DataSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAC7E21E0097D5002CE96B /* DataSetTests.swift */; };
 		55D9D57B1E00818F009114FA /* Can.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Can.framework */; };
 		55D9D58B1E008369009114FA /* Honda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Honda.framework */; };
 		55D9D5911E00838C009114FA /* HondaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D9D57F1E008319009114FA /* HondaTests.swift */; };
@@ -176,6 +178,8 @@
 		550B43831DFF849100CDE972 /* CanID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanID.swift; sourceTree = "<group>"; };
 		550B43851DFF84C200CDE972 /* CanFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanFrame.swift; sourceTree = "<group>"; };
 		550B43891DFF9AC300CDE972 /* MessageTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTypeTests.swift; sourceTree = "<group>"; };
+		55BAC7DF1E009199002CE96B /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		55BAC7E21E0097D5002CE96B /* DataSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSetTests.swift; sourceTree = "<group>"; };
 		55D9D57F1E008319009114FA /* HondaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HondaTests.swift; sourceTree = "<group>"; };
 		55D9D5861E008369009114FA /* HondaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 				OBJ_32 /* Parse.swift */,
 				550B43831DFF849100CDE972 /* CanID.swift */,
 				550B43851DFF84C200CDE972 /* CanFrame.swift */,
+				55BAC7DF1E009199002CE96B /* DataSet.swift */,
 			);
 			name = Can;
 			path = Sources/Can;
@@ -372,6 +377,7 @@
 				550B437F1DFF2F8900CDE972 /* ParseTests.swift */,
 				550B437D1DFF2A1000CDE972 /* FrameTests.swift */,
 				OBJ_40 /* IDTests.swift */,
+				55BAC7E21E0097D5002CE96B /* DataSetTests.swift */,
 			);
 			name = CanTests;
 			path = Tests/CanTests;
@@ -660,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				55BAC7E31E0097D5002CE96B /* DataSetTests.swift in Sources */,
 				550B43801DFF2F8900CDE972 /* ParseTests.swift in Sources */,
 				550B437E1DFF2A1000CDE972 /* FrameTests.swift in Sources */,
 				OBJ_136 /* IDTests.swift in Sources */,
@@ -710,6 +717,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				55BAC7E11E009247002CE96B /* DataSet.swift in Sources */,
 				OBJ_94 /* Data.swift in Sources */,
 				550B43871DFF85C600CDE972 /* CanID.swift in Sources */,
 				OBJ_95 /* MessageType.swift in Sources */,
