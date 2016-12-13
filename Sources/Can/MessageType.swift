@@ -8,13 +8,17 @@
 
 import Foundation
 
-typealias IDMatch = [UInt8?]
-
-class MessageType {
-    var match: IDMatch
+class MessageType: ExpressibleByArrayLiteral {
+    var match: [Element]
     
-    init(match: IDMatch) {
-        self.match = match
+    typealias Element = UInt8?
+    
+    required init(arrayLiteral: Element...) {
+        self.match = arrayLiteral
+    }
+    
+    init(_ elements: Element...) {
+        self.match = elements
     }
     
     func matches(_ data: CanData) -> Bool {
