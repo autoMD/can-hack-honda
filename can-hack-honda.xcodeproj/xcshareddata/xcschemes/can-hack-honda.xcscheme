@@ -109,7 +109,26 @@
                ReferencedContainer = "container:can-hack-honda.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "55D9D5851E008369009114FA"
+               BuildableName = "HondaTests.xctest"
+               BlueprintName = "HondaTests"
+               ReferencedContainer = "container:can-hack-honda.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "OBJ_51"
+            BuildableName = "Spectre.framework"
+            BlueprintName = "Spectre"
+            ReferencedContainer = "container:can-hack-honda.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -141,6 +160,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "OBJ_51"
+            BuildableName = "Spectre.framework"
+            BlueprintName = "Spectre"
+            ReferencedContainer = "container:can-hack-honda.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -13,7 +13,7 @@ public enum ParseError: Error {
     case invalidHex(String)
 }
 
-fileprivate func parse(hex: String) throws -> UInt8 {
+internal func parse(hex: String) throws -> UInt8 {
     guard let int = UInt8(hex, radix: 16) else { // convert hex string to UInt8
         throw ParseError.invalidHex(hex)
     }

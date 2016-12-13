@@ -15,11 +15,11 @@ import Can
 
 enum HondaMessageSender: UInt8 {
     case MICU = 0x10
-    case RelayControlModule	= 0x11
-    case DoorMultiplexControlUnit = 0x30
-    case GaugeControlModule = 0x50
-    case ClimateControlUnit = 0x52
-    case CombinationSwitchControlUnit = 0x70
+    case Relay	= 0x11
+    case Door = 0x30
+    case Gauge = 0x50
+    case Climate = 0x52
+    case CombinationSwitch = 0x70
     
     var messageType: MessageType {
         return [nil, nil, nil, self.rawValue]

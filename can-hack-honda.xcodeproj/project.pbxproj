@@ -13,6 +13,8 @@
 		550B43881DFF85CB00CDE972 /* CanFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43851DFF84C200CDE972 /* CanFrame.swift */; };
 		550B438A1DFF9AC300CDE972 /* MessageTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43891DFF9AC300CDE972 /* MessageTypeTests.swift */; };
 		55D9D57B1E00818F009114FA /* Can.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Can.framework */; };
+		55D9D58B1E008369009114FA /* Honda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Honda.framework */; };
+		55D9D5911E00838C009114FA /* HondaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D9D57F1E008319009114FA /* HondaTests.swift */; };
 		OBJ_100 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PathKit.framework */; };
 		OBJ_109 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* main.swift */; };
 		OBJ_111 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Spectre.framework */; };
@@ -159,6 +161,13 @@
 			remoteGlobalIDString = OBJ_89;
 			remoteInfo = Can;
 		};
+		55D9D58C1E008369009114FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_117;
+			remoteInfo = Honda;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +176,8 @@
 		550B43831DFF849100CDE972 /* CanID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanID.swift; sourceTree = "<group>"; };
 		550B43851DFF84C200CDE972 /* CanFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanFrame.swift; sourceTree = "<group>"; };
 		550B43891DFF9AC300CDE972 /* MessageTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTypeTests.swift; sourceTree = "<group>"; };
+		55D9D57F1E008319009114FA /* HondaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HondaTests.swift; sourceTree = "<group>"; };
+		55D9D5861E008369009114FA /* HondaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Expectation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Failure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
@@ -197,13 +208,21 @@
 		OBJ_46 /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_47 /* Can.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Can.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_48 /* Hack */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hack; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_49 /* Honda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Honda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_49 /* Honda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Honda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_50 /* CanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		55D9D5831E008369009114FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D9D58B1E008369009114FA /* Honda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_110 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -271,6 +290,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55D9D57E1E0082E1009114FA /* HondaTests */ = {
+			isa = PBXGroup;
+			children = (
+				55D9D57F1E008319009114FA /* HondaTests.swift */,
+			);
+			name = HondaTests;
+			path = Tests/HondaTests;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_17 /* Commander */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +359,7 @@
 		OBJ_37 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				55D9D57E1E0082E1009114FA /* HondaTests */,
 				OBJ_38 /* CanTests */,
 			);
 			path = Tests;
@@ -358,6 +387,7 @@
 				OBJ_48 /* Hack */,
 				OBJ_49 /* Honda.framework */,
 				OBJ_50 /* CanTests.xctest */,
+				55D9D5861E008369009114FA /* HondaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -406,6 +436,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		55D9D5851E008369009114FA /* HondaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55D9D58E1E008369009114FA /* Build configuration list for PBXNativeTarget "HondaTests" */;
+			buildPhases = (
+				55D9D5821E008369009114FA /* Sources */,
+				55D9D5831E008369009114FA /* Frameworks */,
+				55D9D5841E008369009114FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55D9D58D1E008369009114FA /* PBXTargetDependency */,
+			);
+			name = HondaTests;
+			productName = HondaTests;
+			productReference = 55D9D5861E008369009114FA /* HondaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		OBJ_104 /* Hack */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_105 /* Build configuration list for PBXNativeTarget "Hack" */;
@@ -539,7 +587,15 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					55D9D5851E008369009114FA = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = CB8792S7AP;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "can-hack-honda" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -560,11 +616,30 @@
 				OBJ_104 /* Hack */,
 				OBJ_117 /* Honda */,
 				OBJ_130 /* CanTests */,
+				55D9D5851E008369009114FA /* HondaTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		55D9D5841E008369009114FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		55D9D5821E008369009114FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D9D5911E00838C009114FA /* HondaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_108 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -651,6 +726,11 @@
 			target = OBJ_89 /* Can */;
 			targetProxy = 55D9D5791E008189009114FA /* PBXContainerItemProxy */;
 		};
+		55D9D58D1E008369009114FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_117 /* Honda */;
+			targetProxy = 55D9D58C1E008369009114FA /* PBXContainerItemProxy */;
+		};
 		OBJ_101 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_51 /* Spectre */;
@@ -724,6 +804,70 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		55D9D58F1E008369009114FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CB8792S7AP;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = RJSDev.HondaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		55D9D5901E008369009114FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = CB8792S7AP;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = RJSDev.HondaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		OBJ_106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -806,7 +950,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "can-hack-honda.xcodeproj/CanTests_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -823,7 +966,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "can-hack-honda.xcodeproj/CanTests_Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1068,6 +1210,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		55D9D58E1E008369009114FA /* Build configuration list for PBXNativeTarget "HondaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55D9D58F1E008369009114FA /* Debug */,
+				55D9D5901E008369009114FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		OBJ_105 /* Build configuration list for PBXNativeTarget "Hack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
