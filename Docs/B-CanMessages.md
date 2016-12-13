@@ -19,7 +19,7 @@ Gauge Control Module            | 50
 Climate Control Unit            | 52
 Combination Switch Control Unit | 70
 
-## Message Types and Recivers
+## Message Senders and Recivers
 These are the types of messages sent and the recivers. They correspond to the first 2? Bytes of the Message Id
 
 Transmitting Control Unit | Message | MICU | Relay Control Module | Door Multiplex Control Unit | Combination Switch Control Unit | Gauge Control Module | Climate Control Unit
