@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension UInt8 {
+internal extension UInt8 {
     /// Converts to a hex string
     var hex: String {
         return String(self, radix: 16, uppercase: true)
@@ -20,4 +20,4 @@ extension UInt8 {
     }
 }
 
-typealias CanData = [UInt8]
+internal typealias CanData = [UInt8]

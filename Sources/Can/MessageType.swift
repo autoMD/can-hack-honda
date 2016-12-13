@@ -8,20 +8,20 @@
 
 import Foundation
 
-class MessageType: ExpressibleByArrayLiteral {
+public struct MessageType: ExpressibleByArrayLiteral {
     var match: [Element]
     
-    typealias Element = UInt8?
+    public typealias Element = UInt8?
     
-    required init(arrayLiteral: Element...) {
+    public init(arrayLiteral: Element...) {
         self.match = arrayLiteral
     }
     
-    init(_ elements: Element...) {
+    public init(_ elements: Element...) {
         self.match = elements
     }
     
-    func matches(_ data: CanData) -> Bool {
+    internal func matches(_ data: CanData) -> Bool {
         for (matchSegment, dataSegment) in zip(match, data) {
             guard let activatedMatchSegment = matchSegment else {
                 continue // we don't care about this part of the data
@@ -35,7 +35,7 @@ class MessageType: ExpressibleByArrayLiteral {
     }
 }
 
-extension CanID {
+public extension CanID {
     func `is`(type: MessageType) -> Bool {
         return type.matches(self.data)
     }

@@ -12,6 +12,7 @@
 		550B43871DFF85C600CDE972 /* CanID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43831DFF849100CDE972 /* CanID.swift */; };
 		550B43881DFF85CB00CDE972 /* CanFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43851DFF84C200CDE972 /* CanFrame.swift */; };
 		550B438A1DFF9AC300CDE972 /* MessageTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43891DFF9AC300CDE972 /* MessageTypeTests.swift */; };
+		55D9D57B1E00818F009114FA /* Can.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Can.framework */; };
 		OBJ_100 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PathKit.framework */; };
 		OBJ_109 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* main.swift */; };
 		OBJ_111 /* Spectre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Spectre.framework */; };
@@ -151,6 +152,13 @@
 			remoteGlobalIDString = OBJ_89;
 			remoteInfo = Can;
 		};
+		55D9D5791E008189009114FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_89;
+			remoteInfo = Can;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -210,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				55D9D57B1E00818F009114FA /* Can.framework in Frameworks */,
 				OBJ_124 /* Spectre.framework in Frameworks */,
 				OBJ_125 /* Commander.framework in Frameworks */,
 				OBJ_126 /* PathKit.framework in Frameworks */,
@@ -426,6 +435,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				55D9D57A1E008189009114FA /* PBXTargetDependency */,
 				OBJ_127 /* PBXTargetDependency */,
 				OBJ_128 /* PBXTargetDependency */,
 				OBJ_129 /* PBXTargetDependency */,
@@ -636,6 +646,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		55D9D57A1E008189009114FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_89 /* Can */;
+			targetProxy = 55D9D5791E008189009114FA /* PBXContainerItemProxy */;
+		};
 		OBJ_101 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_51 /* Spectre */;

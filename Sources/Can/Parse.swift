@@ -8,19 +8,19 @@
 
 import Foundation
 
-enum ParseError: Error {
+public enum ParseError: Error {
     case idNotFound
     case invalidHex(String)
 }
 
-func parse(hex: String) throws -> UInt8 {
+fileprivate func parse(hex: String) throws -> UInt8 {
     guard let int = UInt8(hex, radix: 16) else { // convert hex string to UInt8
         throw ParseError.invalidHex(hex)
     }
     return int
 }
 
-extension CanID {
+public extension CanID {
     init(parse string: String) throws {
         guard let idRange = string.range(of: "0x([A-F0-9]{7,8})(?![A-F0-9])", options: .regularExpression) else {
             throw ParseError.idNotFound
@@ -44,7 +44,7 @@ extension CanID {
     }
 }
 
-extension CanFrame {
+public extension CanFrame {
     init(parse string: String) throws {
         let id = try CanID(parse: string)
 

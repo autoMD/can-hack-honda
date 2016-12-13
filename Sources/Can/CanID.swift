@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct CanID {
+public struct CanID {
     internal var data: CanData
     
-    typealias Element = CanData.Element
+    public typealias Element = CanData.Element
     
     init(_ data: CanData) {
         self.data = data
@@ -19,19 +19,19 @@ struct CanID {
 }
 
 extension CanID: ExpressibleByArrayLiteral {
-    init(arrayLiteral: Element...) {
+    public init(arrayLiteral: Element...) {
         self.data = arrayLiteral
     }
 }
 
 extension CanID : CustomStringConvertible {
-    var description: String {
+    public var description: String {
         return "0x\(data.map {$0.hex}.joined(separator: ""))"
     }
 }
 
 extension CanID : Equatable {
-    static func == (left: CanID, right: CanID) -> Bool {
+    public static func == (left: CanID, right: CanID) -> Bool {
         return left.data == right.data
     }
 }

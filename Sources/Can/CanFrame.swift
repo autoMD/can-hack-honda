@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CanFrame {
+public struct CanFrame {
     var id: CanID
     var data: CanData
     
@@ -25,14 +25,14 @@ struct CanFrame {
 }
 
 extension CanFrame: Equatable {
-    static func == (left: CanFrame, right: CanFrame) -> Bool {
+    public static func == (left: CanFrame, right: CanFrame) -> Bool {
         return left.id == right.id &&
             left.data == right.data
     }
 }
 
 extension CanFrame : CustomStringConvertible {
-    var description: String {
+    public var description: String {
         return "\(id): " + data.map {$0.hexByte}.joined(separator: ", ")
     }
 }
