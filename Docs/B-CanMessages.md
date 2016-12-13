@@ -7,7 +7,7 @@ Message Class | Message Class | Target | Sender
 A   |  F8  |  11  |  11
 
 ## Control Unit ids
-These are the control unit ids for the Honda B-Can
+These are the control unit ids for the Honda B-Can. 
 One of these is always present in the target Byte of the id
 
 Control Unit                    | ID
@@ -18,3 +18,24 @@ Door Multiplex Control Unit     | 30
 Gauge Control Module            | 50 
 Climate Control Unit            | 52
 Combination Switch Control Unit | 70
+
+## Message Types
+These are the types of messages sent. They correspond to the first 2? Bytes of the Message Id
+
+Transmitting Control Unit | Message | MICU | Relay Control Module | Door Multiplex Control Unit | Combination Switch Control Unit | Gauge Control Module | Climate Control Unit
+--- | --- | --- | --- | --- | --- | --- | --- 
+MICU                            | Alarm |
+                                | MICU  |
+                                | Door Switch |
+Relay Control Module            | Relay Control Module |
+Door Multiplex Control Unit     | Panic |
+                                | Driver's Door Lock Switch |
+Combination Switch Control Unit | Headlight Switch |
+                                | Wiper Switch |
+Gauge Control Module            | VSP/NE |
+                                | A/T |
+                                | ENGTEP |
+PCM                             | ENG |
+                                | AT |
+TPMS                            | TPMS |
+VSA                             | VSA |
