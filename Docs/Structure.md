@@ -4,20 +4,21 @@ Module Structure for the can-hack family of programs
 ## CAN
 #### Data.swift
 Contains basic data structures for representing can data
-- struct CanID = (UInt8, UInt8, UInt8, UInt8)
-- struct CanData = [UInt8]
+- typealias CanData = [UInt8]
+
+#### CanID.swift
+- var data: CanData
+
+#### CanFrame.swift
+- var id: CanID
+- var data: CanData
 
 #### Parse.swift
 Tools for parsing input strings into Can Data Structures
 
-
 #### MessageType.swift
 Tools for identifying a message as a specific type
-- by matching Id segment and position
-
-#### MessageSource.swift
-Tools for identifying a message source or target
-subclass MessageType
+- by matching data segments at position
 
 #### DataSet.swift
 A Object that represents a set of can data frames
