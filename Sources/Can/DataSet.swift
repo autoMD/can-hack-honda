@@ -9,9 +9,9 @@
 import Foundation
 
 public class DataSet {
-    fileprivate var frames: [CanFrame]
+    fileprivate var frames: Set<CanFrame>
     
-    init(frames: [CanFrame]) {
+    init(frames: Set<CanFrame>) {
         self.frames = frames
     }
 }
@@ -24,14 +24,6 @@ extension DataSet: CustomStringConvertible {
 
 extension DataSet: Equatable {
     public static func == (left: DataSet, right: DataSet) -> Bool {
-        guard left.frames.count == right.frames.count else {return false} // must be same length to be the same
-        
-        for (frame1, frame2) in zip(left.frames, right.frames) {
-            if frame1 != frame2 {
-                return false // not equal, can't be the same
-            }
-        }
-        
-        return true
+        return left.frames == right.frames
     }
 }
