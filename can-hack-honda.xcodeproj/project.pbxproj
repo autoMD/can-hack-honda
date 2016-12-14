@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		198891691E00C72F001EFAF1 /* Can.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Can.framework */; };
+		1988916A1E00C72F001EFAF1 /* Honda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Honda.framework */; };
 		550B437E1DFF2A1000CDE972 /* FrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B437D1DFF2A1000CDE972 /* FrameTests.swift */; };
 		550B43801DFF2F8900CDE972 /* ParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B437F1DFF2F8900CDE972 /* ParseTests.swift */; };
 		550B43871DFF85C600CDE972 /* CanID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B43831DFF849100CDE972 /* CanID.swift */; };
@@ -58,6 +60,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		198891651E00C72A001EFAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_89;
+			remoteInfo = Can;
+		};
+		198891671E00C72A001EFAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_117;
+			remoteInfo = Honda;
+		};
 		550B436F1DFF283E00CDE972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -231,6 +247,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				198891691E00C72F001EFAF1 /* Can.framework in Frameworks */,
+				1988916A1E00C72F001EFAF1 /* Honda.framework in Frameworks */,
 				OBJ_111 /* Spectre.framework in Frameworks */,
 				OBJ_112 /* Commander.framework in Frameworks */,
 				OBJ_113 /* PathKit.framework in Frameworks */,
@@ -470,6 +488,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				198891661E00C72A001EFAF1 /* PBXTargetDependency */,
+				198891681E00C72A001EFAF1 /* PBXTargetDependency */,
 				OBJ_114 /* PBXTargetDependency */,
 				OBJ_115 /* PBXTargetDependency */,
 				OBJ_116 /* PBXTargetDependency */,
@@ -729,6 +749,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		198891661E00C72A001EFAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_89 /* Can */;
+			targetProxy = 198891651E00C72A001EFAF1 /* PBXContainerItemProxy */;
+		};
+		198891681E00C72A001EFAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_117 /* Honda */;
+			targetProxy = 198891671E00C72A001EFAF1 /* PBXContainerItemProxy */;
+		};
 		55D9D57A1E008189009114FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_89 /* Can */;
