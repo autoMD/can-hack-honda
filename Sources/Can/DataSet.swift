@@ -11,8 +11,12 @@ import Foundation
 public class DataSet {
     fileprivate var frames: Set<CanFrame>
     
-    init(frames: Set<CanFrame>) {
+    init(_ frames: Set<CanFrame>) {
         self.frames = frames
+    }
+    
+    init(_ frames: Array<CanFrame>) {
+        self.frames = Set(frames)
     }
 }
 

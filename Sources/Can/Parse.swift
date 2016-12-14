@@ -77,6 +77,6 @@ public extension DataSet {
             data.insert(frame)
         }
         
-        self.init(frames: data)
+        self.init(data)
     }
 }

@@ -54,7 +54,7 @@ class DataSetTests: XCTestCase {
             return CanFrame(idData: zipped.0, data: zipped.1)
         }
         
-        let dataSet = DataSet(frames: Set(frames))
+        let dataSet = DataSet(frames)
         let description = "Not a Can Frame, just a header\n" + dataSet.description
         
         let parsedDataSet = DataSet(parse: description)
@@ -75,8 +75,8 @@ class DataSetTests: XCTestCase {
             return CanFrame(idData: zipped.0, data: zipped.1)
         }
 
-        XCTAssertTrue(frames != shorterFrames)
-        XCTAssertTrue(frames == reversedFrames)
+        XCTAssertTrue(DataSet(frames) != DataSet(shorterFrames))
+        XCTAssertTrue(DataSet(frames) == DataSet(reversedFrames))
         
     }
 }
